@@ -15,7 +15,7 @@ else
 fi
 
 # Step 2: Install Homebrew Packages
-cat ./brew_packages | xargs -o brew install
+./setup/brew_packages.sh
 
 # Step 3: Install Homebrew Casks
 ./setup/brew_casks.sh

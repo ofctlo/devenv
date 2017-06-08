@@ -1,0 +1,14 @@
+" Don't support VI
+set nocompatible
+
+syntax on
+
+set nobackup
+set writebackup
+set noswapfile
+
+set cursorcolumn
+
+set tw=80
+
+au FileType gitcommit set tw=72

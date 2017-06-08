@@ -1,0 +1,12 @@
+[alias]
+  br     = branch
+  co     = status
+  st     = status
+  staged = diff --cached
+  unwip  = reset HEAD~
+  wip    = commit -m WIP --no-verify
+[core]
+  editor = /usr/local/bin/vim
+[user]
+	name = Brian Mason
+	email = brian.dale.mason@gmail.com

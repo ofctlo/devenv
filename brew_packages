@@ -2,4 +2,5 @@ ack
 cloc
 heroku
 htop
+tmux
 vim

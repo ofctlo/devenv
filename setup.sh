@@ -18,7 +18,7 @@ fi
 cat ./brew_packages | xargs -o brew install
 
 # Step 3: Install Homebrew Casks
-cat ./brew_casks | xargs -o brew cask install
+./setup/brew_casks.sh
 
 # Step 4: Symlink config files
 ./setup/symlink.sh

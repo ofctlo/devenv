@@ -39,8 +39,6 @@ set colorcolumn=+1 " Should textwidth limit
 set number         " Line numbers
 set laststatus=2   " Always show status line
 
-au FileType gitcommit set tw=72
-
 " Search:
 set incsearch  " Start searching from current cursor
 set hlsearch   " Highlight search results

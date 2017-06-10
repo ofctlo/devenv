@@ -62,6 +62,9 @@ set autoread " Detect background changes to file
 
 set hidden " Switch buffers without saving
 
+" Aliases
+inoremap jj <Esc>
+
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized

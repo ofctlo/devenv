@@ -28,8 +28,6 @@
       git clone $url "$plugin_dir"
     fi
   done
+  ln -s $PWD/.vim/ ~
+  cd "$previous_dir"
 )
-
-ln -s $PWD/.vim/ ~
-
-cd "$previous_dir"

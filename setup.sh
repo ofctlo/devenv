@@ -22,3 +22,8 @@ fi
 
 # Step 4: Symlink config files
 ./setup/symlink.sh
+
+# Step 5: Run plugin-specific setup
+find ./setup/plugins/* -name setup.sh | while read filename; do
+  $filename
+done

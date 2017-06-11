@@ -1,8 +1,11 @@
 ack
+ant
 ag
 cloc
+gradle
 heroku
 htop
+maven
 node
 rg
 tmux

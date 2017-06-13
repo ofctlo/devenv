@@ -5,6 +5,7 @@ cloc
 gradle
 heroku
 htop
+mas
 maven
 nvm
 rg

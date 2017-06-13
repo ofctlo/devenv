@@ -8,6 +8,7 @@ htop
 mas
 maven
 nvm
+reattach-to-user-namespace
 rg
 tmux
 vim

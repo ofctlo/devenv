@@ -4,6 +4,7 @@ android-sdk
 android-studio
 dropbox
 flash-npapi
+flash-ppapi
 google-chrome
 intel-haxm
 iterm2

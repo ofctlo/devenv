@@ -47,3 +47,9 @@ tmux() {
     env $tmux_env "$(which tmux)" "$@"
   fi
 }
+
+# Bash Prompt:
+function parse_git_branch {
+   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+export PS1="\u \h \w \$(parse_git_branch)\n> "

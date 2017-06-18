@@ -17,3 +17,5 @@ if ( ! defaults read com.apple.universalaccess 'com.apple.custommenu.apps' | gre
   defaults write com.apple.universalaccess 'com.apple.custommenu.apps' \
     -array-add 'com.apple.Safari'
 fi
+
+defaults write com.apple.TextEdit RichText -int 0

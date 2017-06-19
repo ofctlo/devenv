@@ -19,3 +19,6 @@ if ( ! defaults read com.apple.universalaccess 'com.apple.custommenu.apps' | gre
 fi
 
 defaults write com.apple.TextEdit RichText -int 0
+
+# AppleScript :(
+osascript -e 'tell application "System Events" to delete login item "Spotify"'

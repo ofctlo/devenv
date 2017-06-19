@@ -1,6 +1,6 @@
 [alias]
   br     = branch
-  co     = status
+  co     = checkout
   lg     = log --oneline --graph --decorate
   lg1 = !"git lg1-specific --all"
   lg2 = !"git lg2-specific --all"

@@ -19,6 +19,10 @@ export PATH=$ANDROID_HOME/build-tools/19.1.0:$PATH
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
+if [ -f /usr/local/share/bash-completion/bash_completion ]; then
+  . /usr/local/share/bash-completion/bash_completion
+fi
+
 alias t=tmux
 
 # Taken from:

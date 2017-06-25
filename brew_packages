@@ -2,6 +2,7 @@ ack
 ant
 ag
 bash
+bash-completion@2
 cloc
 gradle
 heroku

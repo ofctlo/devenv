@@ -1,6 +1,7 @@
 ack
 ant
 ag
+bash
 cloc
 gradle
 heroku

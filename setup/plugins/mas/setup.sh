@@ -16,3 +16,4 @@ mas_install_by_name() {
 mas_install_by_name xcode brian.dale.mason@gmail.com
 mas_install_by_name 'Tweetbot for Twitter' brian.dale.mason@gmail.com
 mas_install_by_name garageband brian.dale.mason@gmail.com
+mas_install_by_name pages brian.dale.mason@gmail.com

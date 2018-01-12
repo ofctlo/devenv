@@ -1,19 +1,77 @@
 [alias]
-  br     = branch
-  co     = checkout
-  lg     = log --oneline --graph --decorate
-  lg1 = !"git lg1-specific --all"
-  lg2 = !"git lg2-specific --all"
-  lg3 = !"git lg3-specific --all"
+  br           = branch -v -v
+  co           = checkout
+  cp           = cherry-pick
+  lg           = log --oneline --graph --decorate
+  lg1          = !"git lg1-specific --all"
+  lg2          = !"git lg2-specific --all"
+  lg3          = !"git lg3-specific --all"
   lg1-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
   lg2-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
   lg3-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n’’          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
-  st     = status
-  staged = diff --cached
-  unwip  = reset HEAD~
-  wip    = commit -m WIP --no-verify
+  rb           = rebase
+  st           = status
+  staged       = diff --cached
+  unstash      = stash pop
+  unwip        = reset HEAD~
+  wip          = commit -m WIP --no-verify
+[apply]
+  whitespace = fix
+[branch]
+  autosetupmerge  = always
+  autosetuprebase = always
+[color]
+  ui = auto
+[color "branch"]
+  current = green bold
+  local   = bold
+  plain   = normal
+  remote  = cyan bold
+[color "decorate"]
+  branch       = white bold
+  remoteBranch = cyan bold
+  tag          = red
+  stash        = magenta
+  HEAD         = green
+[color "diff"]
+  commit     = yellow bold
+  frag       = cyan
+  func       = bold cyan
+  meta       = bold
+  new        = green bold
+  plain      = normal
+  old        = red bold
+  untracked  = bold
+  whitespace = yellow reverse
+[color "diff-highlight"]
+  oldNormal    = "red bold"
+  oldHighlight = "red bold 52"
+  newNormal    = "green bold"
+  newHighlight = "green bold 22"
+[color "grep"]
+  context    = normal
+  filename   = green bold
+  function   = cyan bold
+  linenumber = yellow bold
+  match      = yellow reverse
+  selected   = normal
+  separator  = normal
+[color "interactive"]
+  error  = red bold
+  header = cyan
+  help   = yellow bold
+  prompt = magenta bold
+[color "status"]
+  header    = cyan
+  added     = green bold
+  branch    = green bold
+  changed   = red bold
+  nobranch  = red bold
+  untracked = normal
 [core]
   editor = /usr/local/bin/vim
+[rebase]
+  autosquash = true
 [user]
-	name = Brian Mason
-	email = brian.dale.mason@gmail.com
+  name = Brian Mason
+  email = brian.dale.mason@gmail.com

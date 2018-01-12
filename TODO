@@ -1,5 +1,0 @@
-# TODO
-
-- Add nvm versions?
-- How to manage npm packages that are Node version dependent
-  * create-react-native-app depends on Node < 5

@@ -58,7 +58,6 @@ function parse_git_branch {
 }
 export PS1="\u \h \w \$(parse_git_branch)\n» "
 
-# ls colors
-export CLICOLOR=1
-export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-alias ls="ls -Gp"
+# ls colors (gls has better color customization options, requires coreutils)
+eval `gdircolors ~/.dircolors`
+alias ls="gls -p --color"

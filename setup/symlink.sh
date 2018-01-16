@@ -3,6 +3,6 @@
 # There must be a way to do this without cd
 cd ./config
 for f in `ls`; do
-  ln -s $PWD/$f ~/.$f;
+  ln -fs $PWD/$f ~/.$f;
 done
 cd -

@@ -62,13 +62,25 @@ set autoread " Detect background changes to file
 
 set hidden " Switch buffers without saving
 
+" Split behavior
+set splitbelow
+set splitright
+
 " Aliases
 " TODO: Why does `jj <Esc>` work with `inoremap`, but `<C-t> :tabedit<CR>`
 " works with `map`?
 inoremap jj <Esc>
+" tab navigation
 map <C-t> :tabedit<CR>
 map <C-n> :tabnext<CR>
 map <C-p> :tabprev<CR>
+" split navigation
+nnoremap <C-\> :vsp<CR>
+nnoremap <C-_> :sp<CR>
+nnoremap <C-h> <C-w><C-h>
+nnoremap <C-j> <C-w><C-j>
+nnoremap <C-k> <C-w><C-k>
+nnoremap <C-l> <C-w><C-l>
 
 " CtrlP config
 let g:ctrlp_map = '<Space>'

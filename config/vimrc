@@ -63,7 +63,12 @@ set autoread " Detect background changes to file
 set hidden " Switch buffers without saving
 
 " Aliases
+" TODO: Why does `jj <Esc>` work with `inoremap`, but `<C-t> :tabedit<CR>`
+" works with `map`?
 inoremap jj <Esc>
+map <C-t> :tabedit<CR>
+map <C-n> :tabnext<CR>
+map <C-p> :tabprev<CR>
 
 " CtrlP config
 let g:ctrlp_map = '<Space>'

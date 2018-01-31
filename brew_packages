@@ -9,10 +9,12 @@ gpg
 gradle
 heroku
 htop
+libpqxx
 mas
 maven
 nvm
 reattach-to-user-namespace
+redis
 rg
 tmux
 vim

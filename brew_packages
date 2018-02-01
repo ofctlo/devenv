@@ -6,6 +6,7 @@ bash-completion@2
 cloc
 cmake
 coreutils
+go
 gpg
 gradle
 heroku

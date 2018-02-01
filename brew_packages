@@ -4,6 +4,7 @@ ag
 bash
 bash-completion@2
 cloc
+cmake
 coreutils
 gpg
 gradle

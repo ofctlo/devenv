@@ -1,15 +1,10 @@
-source ~/.profile
-source ~/.git-completion.bash
-
-export JAVA_HOME=$(/usr/libexec/java_home)
-export PATH=$JAVA_HOME/bin:$PATH
-
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=~/src/gopath
 export PATH=$PATH:$GOPATH/bin
 
 alias t=tmux
 alias be="bundle exec"
+alias ack="ag"
 
 # Taken from:
 # https://github.com/sds/.files/blob/14de3588cf558d7000f36a03341f8b690b0af61e/plugins/tmux/lib/interactive/helper.bash

@@ -1,2 +1,2 @@
-source ~/.airlab/shellhelper.sh
 source ~/.bash_profile
+eval "$(rbenv init -)"

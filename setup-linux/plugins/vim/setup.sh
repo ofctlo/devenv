@@ -1,5 +1,25 @@
 #!/bin/bash
-sudo apt-get upgrade vim
+sudo apt-get remove vim
+
+sudo apt-get install rbenv
+
+sudo apt-get install libncurses5-dev libncursesw5-dev
+git clone git@github.com:vim/vim.git
+cd vim
+./configure --with-python3interp \
+            --with-rubyinterp \
+            --with-luainterp \
+            --with-perlinterp \
+            --with-gui=no \
+            --without-x \
+            --disable-nls \
+            --with-tlib=ncurses \
+            --enable-terminal \
+            --enable-cscope \
+            --enable-multibyte
+make
+
+
 
 (
   previous_dir=$PWD

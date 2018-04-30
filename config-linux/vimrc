@@ -113,11 +113,11 @@ endif
 
 " Center cursor vertically
 " From http://vim.wikia.com/wiki/Keep_your_cursor_centered_vertically_on_the_screen
-augroup VCenterCursor
-  au!
-  au BufEnter,WinEnter,WinNew,VimResized *,*.*
-        \ let &scrolloff=winheight(win_getid())/2
-augroup END
+" augroup VCenterCursor
+"   au!
+"   au BufEnter,WinEnter,WinNew,VimResized *,*.*
+"         \ let &scrolloff=winheight(win_getid())/2
+" augroup END
 
 let g:solarized_termcolors=256
 set background=dark

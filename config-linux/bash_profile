@@ -8,15 +8,8 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=~/src/gopath
 export PATH=$PATH:$GOPATH/bin
 
-# TODO: Move the following to nvm-specific config
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
-
 alias t=tmux
+alias be="bundle exec"
 
 # Taken from:
 # https://github.com/sds/.files/blob/14de3588cf558d7000f36a03341f8b690b0af61e/plugins/tmux/lib/interactive/helper.bash
@@ -52,10 +45,5 @@ function parse_git_branch {
 export PS1="\u \h \w \$(parse_git_branch)\n» "
 
 # ls colors (gls has better color customization options, requires coreutils)
-eval `gdircolors ~/.dircolors`
-alias ls="gls -p --color"
-
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-# Airbnb auto-linter
-alias sc="npm run -s sanity-check --"
+eval `dircolors ~/.dircolors`
+alias ls="ls -p --color"
